@@ -1,4 +1,5 @@
-\documentclass[12pt, oneside]{book} % Paper size, default font size and one-sided paper
+% Paper size, default font size and one-sided paper
+\documentclass[12pt, oneside]{book}
 \usepackage{graphicx}
 \usepackage{xeCJK}
 
@@ -9,6 +10,13 @@
 \author{Matsuura Yoshihiro} % Replace with your name
 \date{\today} % Replace with the date or \today for current date
 
+% \chapter{Chapter Title}
+%   \section{Section Title}
+%     \subsection{Subsection Title}
+%       \subsubsection{Subsubsection Title}
+%         \paragraph{Paragraph Title}
+%           \subparagraph{Subparagraph Title}
+
 \begin{document}
 
 \maketitle
@@ -17,15 +25,22 @@
 
 \mainmatter
 \part{Introduction}
-\chapter{Abstract}
-本稿では、機械学習の技術を用いて、言語学一般の問題にこれまでとは異なる視点からの切り口を提示する。
+\chapter{本稿の概要}
+本稿では、機械学習の技術を用いて、言語学一般の問題にこれまでとは異なる視点からの切り口を提示した上で、具体的に機械学習を用いた言語学研究を行う。
 まず、言語学の歴史を概観し、それを踏まえて言語学の諸課題を整理する。その後、本稿での定義を提示し、機械学習の概念を体系的に説明する。最後に、機械学習を用いた言語学研究が奏功する例として言語類型論と理論言語学を挙げ、筆者が卒業研究で行った具体的な研究成果の詳細について述べる。
+\chapter{本研究の目的・意義}
+\section{言語学を研究する意義}
+そもそも、なぜ言語学を
+本研究の目的は、機械学習を用いて言語学の研究を行うことで、言語学の新たな可能性を提示することである。言語学は、従来からの方法論によって研究されてきたが、その方法論には限界がある。本研究では、機械学習を用いることで、従来の方法論では解決できなかった言語学の課題に取り組むことを目指す。
+\section{}
 \chapter{本研究で機械学習を用いる必然性}
 本研究で、あえて機械学習を用いる目的は「生のリソース・一次情報(Raw resource)で言語学を調査するため」である。これは本稿の他の箇所（言語学の諸課題）でも述べるが、往々にして言語学の研究は、特に意識されることもなく副次的な情報が対象とされている。
-これは、機械学習自体の説明
-\part{言語学の歴史}
+これは、「言語学小史」の機械学習自体の説明や、
+
+\part{Linguisitcs}
+\chapter{言語学の歴史}
 本章では、これまでの様々な文献を参考に、言語学の歴史を概観する。
-\chapter{言語学史の概観}
+\section{言語学史の概観}
 言語学の歴史は、以下のように概観される。
 \begin{itemize}
     \item 個別言語のみの時代
@@ -33,16 +48,15 @@
     \item 一般言語学の時代
     \item 理論言語学の時代
 \end{itemize}
-\chapter{個別言語のみの時代}
+\section{個別言語のみの時代}
 古代ギリシャでは、ギリシャ語文法の
 サンスクリット語に関しては、パーニニ
-\chapter{言語の比較研究の時代}
-\chapter{一般言語学の時代}
+\section{言語の比較研究の時代}
+\section{一般言語学の時代}
 フェルディナン・ド・ソシュールの「一般言語学講義」
-\chapter{理論言語学の時代}
+\section{理論言語学の時代}
 ノーム・チョムスキーの生成文法、ラネカーの認知文法
-
-\part{言語学の諸課題}
+\chapter{言語学の諸課題}
 言語学の課題は以下に集約される。
 \begin{itemize}
     \item 研究対象が実際の言語活動の産物だけではないこと。
@@ -70,6 +84,7 @@
 同語源の語彙の意味の違い（空似具合）
 文法の違いの比較
 \chapter{手法}
+
 \part{機械学習を用いた理論言語学研究}
 \part{参考文献}
 \part{謝辞・後書き}
