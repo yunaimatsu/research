@@ -4,7 +4,7 @@ import gensim.downloader as api
 model = api.load('word2vec-google-news-300')
 
 # Definir las palabras
-palabras = ['gato', 'perro', 'pez']
+palabras = ['cat', 'dog', 'fish']
 
 # Calcular la distancia semántica entre las palabras
 distancias = []
