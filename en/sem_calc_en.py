@@ -23,7 +23,7 @@ def find_closest_words(vector, word_embeddings, word_list, n=5):
     return [word_list[i] for i in closest_indices]
 
 # Load BERT model and tokenizer
-model_name = "bert-base-multilingual-cased"
+model_name = "bert-base-uncased"
 tokenizer = BertTokenizer.from_pretrained(model_name)
 model = BertModel.from_pretrained(model_name)
 
