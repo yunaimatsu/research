@@ -1,4 +1,8 @@
+[日本語](#)
+[English]
+
 > 日本語
+# 
 # 研究に関する情報を全て公開するレポジトリ
 このREADMEでは、わたくし松浦の研究について詳細にまとめております。以下のような構成です。
 1. 研究の大きな「最終目標」を掲げる。
@@ -35,3 +39,48 @@
 前項を踏まえると、想像に難くないと思います。大量の文章データであるほどより多くの単語データが確保でき、質・量共に性能が向上します。
 ### 1.3.2. コサイン類似度を算出する
 ベクトルは実数の集合であるため、通常の四則演算ではなく、コサイン類似度を用いて差を算出します。
+
+> English
+
+## Research Information Repository
+
+This README provides a detailed summary of my research, Matsuura's research. It is organized as follows:
+1. State the major "ultimate goal" of the research.
+2. Consider the fundamental research necessary to achieve this goal.
+3. Position and explain my graduation research as one of the foundational studies.
+
+## Ultimate Goal: Enable AI Translation for All Languages Worldwide
+
+1. Describe the "languages" of the world.
+2. List the "languages" of the world and conduct acceptability judgments by native speakers.
+3. Identify languages with low native speaker acceptability (referred to as less-documented languages) and prepare closely related languages.
+4. Create pre-trained models with the closely related languages.
+5. Fine-tune these models using texts collected in the less-documented languages.
+6. Conduct acceptability judgments again using the fine-tuned models.
+
+## 1. Quantifying the Meaning Differences of False Friends
+
+### 1.1. What are False Friends?
+
+False friends are pairs of words that have the same etymology but different meanings. For example, the English word **to ignore** and the French word **ignorer** both derive from the Latin **ignōrāre**. However, in English, it means "**to disregard**," whereas in French it means "**to not know**." Such pairs, where the etymology is the same but the meanings differ, are called **false friends**.
+
+### 1.2. Why Quantify the Meaning Differences of False Friends?
+
+The ultimate goal is to calculate the distance between languages. In traditional [linguistic distance](https://en.wikipedia.org/wiki/Linguistic_distance) studies, the distance between languages has been calculated based on the "proportion of shared etymological words." However, this method is only useful for relatively **different** languages. Languages that are as close as dialects share many etymological words. Therefore, calculating the differences in such proportions would result in negligible errors and would not provide new insights.
+
+### 1.3. How to Quantify the Differences?
+
+This is done in two steps:
+1. **Convert the meanings of individual words into vectors (sets of real numbers).**
+2. **Calculate the cosine similarity between word vectors.**
+
+#### 1.3.1. Converting Meanings into Vectors
+
+The algorithm for this task is too complex to explain here, but I will provide a brief explanation focusing on points that may be misunderstood.
+
+- **Based on context:** The vectorization process is not done randomly but is statistically adjusted based on the context in which the words appear together.
+- **Varies by the type and size of the source text:** This should be easy to imagine based on the previous point. The larger the text data, the more word data can be secured, improving both the quality and quantity of performance.
+
+#### 1.3.2. Calculating Cosine Similarity
+
+Since vectors are sets of real numbers, we calculate the differences using cosine similarity rather than regular arithmetic operations.

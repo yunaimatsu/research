@@ -55,5 +55,5 @@ for index, row in false_friends_df.iterrows():
 
     results.append([word1, word2_es, cos_sim_es, word2_pt, cos_sim_pt, word2_fr, cos_sim_fr])
 
-results_df = pd.DataFrame(results, columns=['English', 'Spanish', 'Cosine_Similarity_ES', 'Portuguese', 'Cosine_Similarity_PT, French', 'Cosine_Similarity_FR'])
+results_df = pd.DataFrame(results, columns=['English', 'Spanish', 'Cosine_Similarity_ES', 'Portuguese', 'Cosine_Similarity_PT', 'French', 'Cosine_Similarity_FR'])
 results_df.to_csv('output.csv', index=True)
